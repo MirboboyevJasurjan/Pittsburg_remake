@@ -247,8 +247,8 @@ nav .container {
   justify-content: center;
   width: 100%;
   position: relative;
-  min-height: 780px;
   max-height: max-content;
+  min-height: 550px;
   position: relative;
   margin-top: 20px !important;
 }
@@ -264,40 +264,68 @@ nav .container {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   height: 100%;
-  border-bottom: 2px solid #dcdcdc;
+  /* border-bottom: 2px solid #dcdcdc; */
   position: relative;
   padding: 20px;
 }
-.servCardsBox{
+.servSecBox{
     display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    width: 100px;
-    position: relative;
-    height: 300px;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
 }
-.numbBox{
-    width: 300px;
-    height: 260px;
-    position: relative;
+.servCardsBox {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 100px;
+  position: relative;
+  height: 300px;
+  border-bottom: 2px solid #bdbdbd;
 }
-.boxNumb{
+
+.servCardsBox::after{
+    content: '';
     position: absolute;
-    bottom: 20px;
+    left: 0px;
+    bottom: -10px;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
 }
-.boxNumb span{
-    font-family: 'SF Pro Display', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 46px;
-    line-height: 110%;
-    color: #111;
+.numbBox {
+  width: 300px;
+  height: 260px;
+  position: relative;
+}
+.servCardsBox  > *:nth-child(even){
+    border-left: 2px solid #bdbdbd;
+    border-right: 2px solid #bdbdbd;
+}
+.boxNumb {
+  position: absolute;
+  bottom: 20px;
+  padding: 20px;
+}
+.boxNumb span {
+  font-family: "SF Pro Display", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 110%;
+  color: #111;
 }
 .boxNumb p {
-    font-weight: 500;
-font-size: 20px;
-line-height: 150%;
-color: #333333;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #333333;
 }
+/* Services */
+.services .boxTitle{
+    position: absolute;
+    bottom: 0;
+}
+
