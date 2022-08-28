@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 #body {
   /* position: absolute; */
   background-color: #fff !important;
+  scroll-behavior: smooth;
 }
 .wrapper {
   width: 100%;
   position: relative;
+  margin-bottom: 200px;
 }
 header {
   width: 100%;
@@ -78,6 +82,7 @@ nav .container {
 .headImg {
   background-image: url("./assets/header.png");
   margin: 0 !important;
+  margin-top: 80px !important;
   background-size: cover;
   object-fit: cover;
   width: 100%;
@@ -263,18 +268,26 @@ nav .container {
   width: 100%;
   display: flex;
   align-items: flex-start;
-  flex-direction: row;
   justify-content: space-between;
   height: 100%;
-  /* border-bottom: 2px solid #dcdcdc; */
   position: relative;
   padding: 20px;
 }
-.servSecBox{
-    display: flex;
-    flex-direction: column !important;
-    justify-content: center;
-    align-items: center;
+
+.servSecBox {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
+}
+.servSecBox::after {
+  content: " ";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background: #fff;
 }
 .servCardsBox {
   display: flex;
@@ -286,23 +299,23 @@ nav .container {
   border-bottom: 2px solid #bdbdbd;
 }
 
-.servCardsBox::after{
-    content: '';
-    position: absolute;
-    left: 0px;
-    bottom: -10px;
-    height: 20px;
-    width: 20px;
-    background-color: #fff;
+.servCardsBox::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
 }
 .numbBox {
   width: 300px;
   height: 260px;
   position: relative;
 }
-.servCardsBox  > *:nth-child(even){
-    border-left: 2px solid #bdbdbd;
-    border-right: 2px solid #bdbdbd;
+.servCardsBox > *:nth-child(even) {
+  border-left: 2px solid #bdbdbd;
+  border-right: 2px solid #bdbdbd;
 }
 .boxNumb {
   position: absolute;
@@ -324,8 +337,93 @@ nav .container {
   color: #333333;
 }
 /* Services */
-.services .boxTitle{
-    position: absolute;
-    bottom: 0;
+.services .boxTitle {
+  position: absolute;
+  bottom: 0;
 }
 
+.services .boxTitle {
+  border-bottom: 2px solid #bdbdbd;
+}
+
+/* Benefits */
+.reviews, .benefits {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  max-height: max-content;
+  min-height: 1000px;
+  margin-top: 20px !important;
+}
+.reviews .col-3, .benefits .col-3 {
+  height: 100%;
+  border-right: 2px solid #dcdcdc;
+  border-bottom: 2px solid #dcdcdc;
+  padding: 20px;
+  position: relative;
+}
+.reviews .col-9, .benefits .col-9 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+  border-bottom: 2px solid #dcdcdc;
+}
+.benefits .col-9::after {
+  content: " ";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background: #fff;
+}
+
+.benText {
+  color: #333;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
+}
+.tableType {
+  margin-top: 80px !important;
+}
+.tableType .col-12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tableType > .col-12 > * {
+  width: 35%;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #333333;
+  border: 2px solid #bdbdbd;
+  border-left: none;
+  border-right: none;
+  height: 170px !important;
+}
+.tableType > .col-12:nth-child(even) > *{
+  border: none
+}
+.col-12 .rowTit {
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.tableType .col-12 a {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 600;
+  color: #666666;
+  text-decoration: none;
+}

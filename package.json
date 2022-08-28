@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+  },
+  "name": "logistic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MirboboyevJasurjan/logisticComp.git"
+  },
+  "author": "Jasur Mirboboyev",
+  "license": "ISC",
+  "keywords": ["Logistic, HTML, CSS, Bootstrap, Fontawesome, JasurMirboboyev"],
+  "bugs": {
+    "url": "https://github.com/MirboboyevJasurjan/logisticComp/issues"
+  },
+  "homepage": "https://github.com/MirboboyevJasurjan/logisticComp#readme"
+}
