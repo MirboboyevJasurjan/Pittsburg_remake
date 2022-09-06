@@ -39,7 +39,7 @@ header {
   display: flex;
   background: #000 !important;
   color: #fff !important;
-  z-index: 100;
+  z-index: 1000000;
 }
 nav .container {
   display: flex;
@@ -369,10 +369,11 @@ nav .container {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   height: 100%;
   position: relative;
   border-bottom: 2px solid #dcdcdc;
+  padding: 20px;
 }
 .benefits .col-9::after {
   content: " ";
@@ -427,3 +428,230 @@ nav .container {
   color: #666666;
   text-decoration: none;
 }
+/* ОТЗЫВЫ */
+.reviews .col-9 {
+  flex-direction: column;
+  padding: 20px;
+}
+.reviews .col-9::after {
+  content: " ";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background: #fff;
+}
+.reviews .col-9 > * > *{
+  border-right: 2px solid #bdbdbd;
+  height: 100%;
+  z-index: -10;
+}
+.reviews .col-9 > *:nth-child(even) > *{
+  border-bottom: 2px solid #bdbdbd;
+  z-index: 100;
+  border-top: 2px solid #bdbdbd;
+}
+.reviews .col-9 > *:nth-child(even) > *:nth-child(1){
+  border-bottom: none;
+}
+.reviews .col-9 > *:nth-child(even) > *:nth-child(3){
+  border-top: none;
+}
+.reviews .row{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 270px;
+}
+.reviews .row > * {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+}
+.startBox{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.centerBox{
+  position: relative;
+}
+.centerBox::after{
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  background-color: #FFF;
+  content: "";
+  top: 0px;
+  left: -10px;
+}
+.startBox > *{
+  width: 50%;
+  height: 100%;
+  position: relative
+}
+.startBox > *:first-child{
+  border-right: 2px solid #bdbdbd;
+  position: relative;
+}
+.startBox > *:first-child::before{
+  position: absolute;
+  content: ' ';
+  width: 40px;
+  height: 40px;
+  bottom: -40px;
+  left: -40px;
+  background-color: #fff;
+}
+.startBox > *:first-child::after{
+  position: absolute;
+  content: ' ';
+  width: 1px;
+  height: 50px;
+  bottom: -20px;
+  right: -2.5px;
+  background-color: #bdbdbd;
+}
+.endBox{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: space-between;
+}
+.endBox > * {
+  width: 50px;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.endBox > *:last-child{
+  border-left: 2px solid #bdbdbd;
+}
+.endBox > *:last-child::after{
+  position: absolute;
+  content: ' ';
+  width: 2px;
+  height: 50px;
+  top: -25px;
+  left: -2px;
+  background-color: #bdbdbd;
+}
+.endBox > *:last-child::before{
+  position: absolute;
+  content: ' ';
+  width: 40px;
+  height: 40px;
+  top: -40px;
+  right: -40px;
+  background-color: #fff;
+}
+.reviews .col-9 > .row:nth-child(3){
+  border-bottom: 2px solid #bdbdbd;
+}
+.centerRow > .col-4:last-child{
+  position: relative;
+}
+.centerRow > .col-4:last-child:before{
+  position: absolute;
+  content: ' ';
+  bottom: -1px;
+  height: 20px;
+  width: 20px;
+  left: -10px;
+  background-color: #fff;
+}
+
+
+
+/* Партнёры */
+
+.partners {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  max-height: max-content;
+  min-height: 770px;
+  position: relative;
+  margin-top: 20px !important;
+}
+.partners .col-3 {
+  height: 100%;
+  border-right: 2px solid #dcdcdc;
+  border-bottom: 2px solid #dcdcdc;
+  padding: 20px;
+  position: relative;
+}
+.partners .col-9{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 20px;
+  position: relative;
+  transition: 0.5s all ease;
+  border-bottom: 2px solid #bdbdbd;
+}
+ .cardCarousel {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  transition: 0.5s all ease;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #bdbdbd;
+}
+.navBlock{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  background-color: inherit;
+  box-shadow:  0px 0px 20px rgba(0,0,0,0.1);
+}
+.navBlock > *{
+  background-color: inherit;
+  outline: none;
+  border: none;
+  color: #bdbdbd;
+  font-size: 20px;
+  transition: 0.5s all ease;
+}
+.navBlock > *:hover{
+  color: #000;
+}
+.partCard{
+  /* width: 100%; */
+  height: 100%;
+  position: relative;
+  border-right: 2px solid #bdbdbd;
+  padding: 20px;
+  transition: 0.5s all ease;
+}
+.aboutPerson{
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+}
+.avatar img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
