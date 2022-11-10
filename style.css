@@ -668,7 +668,7 @@ nav .container {
   min-height: 300px;
   max-height: max-content;
   position: relative;
-  /* margin-top: 17px !important; */
+  margin-top: -2px !important;
 }
 .group .col-3 {
   padding: 20px;
@@ -745,4 +745,10 @@ nav .container {
 .nukeBox {
   margin: 10px 0;
   border-right: 1px solid #dcdcdc;
+}
+.nukeLogos >*:first-child:nth-child(3){
+  border-right: none;
+}
+.nukeLogos >*:nth-child(3)  {
+  border-right: none;
 }
