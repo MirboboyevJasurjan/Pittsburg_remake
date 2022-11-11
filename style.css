@@ -665,12 +665,73 @@ nav .container {
   align-items: flex-start;
   justify-content: center;
   width: 100%;
+  height: 1200px;
+  position: relative;
+  /* margin-top: -2px !important; */
+}
+
+.group .col-3 {
+  height: 1200px;
+  border-right: 2px solid #dcdcdc;
+  border-bottom: 2px solid #dcdcdc;
+  padding: 20px;
+  position: relative;
+}
+.group .col-9 {
+  width: 100%;
+  height: 1200px;
+  position: relative;
+  padding: 20px;
+  position: relative;
+  transition: 0.5s all ease;
+  border-bottom: 2px solid #bdbdbd;
+}
+
+.nukeLogos {
+  height: 200px;
+  width: 100%;
+  margin: 10px 0;
+}
+.boxOfNuke {
+  border-bottom: 1px solid #dcdcdc;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0;
+}
+.boxOfNuke img {
+  height: 37px;
+  width: 190px;
+}
+.nukeBox {
+  margin: 10px 0;
+  border-right: 1px solid #dcdcdc;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxOfNuke >*:first-child:nth-child(3){
+  border-right: none;
+}
+.nukeLogos >*:nth-child(3)  {
+  border-right: none;
+}
+
+
+/*  */
+.contact{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
   min-height: 300px;
   max-height: max-content;
   position: relative;
   margin-top: -2px !important;
 }
-.group .col-3 {
+.contact .col-3 {
   padding: 20px;
   /* margin-right: 20px; */
   border-right: 2px solid #dcdcdc;
@@ -688,8 +749,8 @@ nav .container {
   color: #bdbdbd;
   text-transform: uppercase;
 }
-.group .col-9 {
-  padding: 20px;
+.contact .col-9 {
+  padding: 0px;
   width: 100%;
   height: 1200px;
   position: relative;
@@ -699,7 +760,7 @@ nav .container {
   border-right: none;
 }
 
-.group .col-9::after {
+.contact .col-9::after {
   position: absolute;
   content: "";
   width: 40px;
@@ -708,7 +769,7 @@ nav .container {
   top: -20px;
   left: -20px;
 }
-.group .col-9::before {
+.contact .col-9::before {
   position: absolute;
   content: "";
   width: 40px;
@@ -717,38 +778,73 @@ nav .container {
   bottom: -20px;
   left: -20px;
 }
-.boxTitle {
-  position: absolute;
-  bottom: 0;
+
+ /*  */
+.cardContainer{
   width: 100%;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 46px;
-  line-height: 120%;
+  height: 100%;
 }
-.nukeLogos {
-  height: 200px;
+ .menuLinks {
   width: 100%;
-  margin: 10px 0;
+  height: 25px;
+  font-size: 18px;
 }
-.nukeLogos > div {
-  border-bottom: 1px solid #dcdcdc;
-  height: 210px;
+.menuLinks__ul  .nav-item .nav-link{
+  color: #BDBDBD !important;
+}
+
+.context {
+  padding: 20px;
+  width: 100%;
+  border-top: 1px #bdbdbd solid;
+  border-bottom: 1px #bdbdbd solid;
+  height: 350px;
+  margin: 25px 0;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.nukeLogos img {
-  height: 37px;
-  width: 190px;
+.per75{
+  width: 75%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border-right: 2px solid #bdbdbd;
+  padding: 20px;
+
 }
-.nukeBox {
-  margin: 10px 0;
-  border-right: 1px solid #dcdcdc;
+.per25{
+  width: 25%;
+  padding-left: 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  
 }
-.nukeLogos >*:first-child:nth-child(3){
-  border-right: none;
+.contextText{
+  width: 75%;
+  padding: 20px;
 }
-.nukeLogos >*:nth-child(3)  {
-  border-right: none;
+.contextName{
+  /* margin: 20px; */
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 110%;
+  color: #111111;
+}
+.contextImage{
+  height: 300px;
+  width: 270px !important;
+}
+.contextNP{
+  height: 260px;
+  width: 270px;
+}
+.contextBtn{
+  background-color: inherit;
+  border: none;
 }
