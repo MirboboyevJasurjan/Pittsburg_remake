@@ -804,7 +804,11 @@ nav .container {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  margin-right: 20px;
+  
 }
+
 .per75{
   width: 75%;
   display: flex;
