@@ -489,7 +489,7 @@ nav a {
 .sectionFive .row {
   display: grid;
   grid-template-columns: 22.5% 3.333333333% 74.166666667%;
-  height: 2401px; /*Dispetecherlar heigh*/
+  height: 2850px; /*Dispetecherlar heigh*/
 }
 
 .sectionFive .row .left {
@@ -517,7 +517,7 @@ nav a {
   position: absolute;
   left: 50%;
   width: 2px;
-  height: 2755px;
+  height: 2810px;
   background-color: #dcdcdc;
 }
 
@@ -543,7 +543,7 @@ nav a {
   display: grid;
   grid-template-columns: 270px 580px;
   column-gap: 40px;
-  height: 340px;
+  height: 450px;
   padding: 30px 0;
   border-top: 2px solid #dcdcdc;
   border-bottom: 2px solid #dcdcdc;
@@ -554,6 +554,9 @@ nav a {
   display: grid;
   grid-template-columns: 270px 270px;
   justify-content: space-between;
+  max-height: 400px !important;
+  overflow: hidden;
+
 }
 .sectionFive .texts .textBoxOne {
   width: 270px;
@@ -1655,6 +1658,7 @@ nav a {
 .sectionTen .row {
   display: grid;
   grid-template-columns: 22.5% 3.333333333% 74.166666667%;
+  margin-bottom: 30px;
 }
 .sectionTen .left {
   width: 100%;
@@ -3892,7 +3896,7 @@ nav a {
   .sectionFive .rBottom {
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 440px;
   }
   .sectionFive .texts {
     display: flex;
@@ -3914,7 +3918,7 @@ nav a {
   .sectionFive .left p {
     position: absolute;
     bottom: 68px;
-    right: -59px;
+    right: -30px;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -3936,10 +3940,20 @@ nav a {
     position: absolute;
     left: 50%;
     width: 2px;
-    height: 1080px;
+    height: 1780px;
     background-color: #dcdcdc;
+    margin-top: 700px;
   }
-
+  .sectionFive .middle .line::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    width: 2px;
+    top: 1000px;
+    height: 1300px;
+    background-color: #dcdcdc;
+    margin-top: 700px;
+  }
   .sectionFive .right {
     display: none;
   }
@@ -4256,11 +4270,12 @@ nav a {
 
   .sectionSeven {
     display: block;
+    height: 850px;
   }
   .sectionSeven .row {
     display: grid;
     grid-template-columns: 48px 30px 282px;
-    height: 685px;
+    height: 850px;
   }
 
   .sectionSeven .row .left {
@@ -4292,7 +4307,7 @@ nav a {
     position: absolute;
     left: 50%;
     width: 2px;
-    height: 655px;
+    height: 820px;
     background-color: #dcdcdc;
   }
 
@@ -4321,7 +4336,7 @@ nav a {
     bottom: 10px;
   }
   .sectionSeven .rightMobile .swiper {
-    height: 505px;
+    height: 740px;
     position: relative;
     margin-top: 15px;
     /* border: 1px solid red; */
@@ -4926,6 +4941,7 @@ nav a {
     display: grid;
     grid-template-columns: 48px 30px 282px;
     height: 750px;
+    margin-bottom: 20px;
   }
   .sectionTen .left {
     width: 100%;

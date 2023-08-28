@@ -848,6 +848,10 @@ navLangEn.forEach((e) => {
     });
 
 
+    let secFiveFlitTitle = document.querySelectorAll(".flitTitle");
+    secFiveFlitTitle.forEach((e) => {
+      e.innerHTML = secFiveData["flitTitle"]["en"];
+    });
     let secFiveFlitText = document.querySelectorAll(".secFiveFlitText");
     secFiveFlitText.forEach((e) => {
       e.innerHTML = secFiveData["flitText"]["en"];
@@ -869,7 +873,7 @@ navLangEn.forEach((e) => {
       e.innerHTML = secFiveData["flitTextLi3"]["en"];
     });
     FlitTextLi4 = document.querySelectorAll(".flitTextLi4");
-    FlitTextLi3.forEach((e) => {
+    FlitTextLi4.forEach((e) => {
       e.innerHTML = secFiveData["flitTextLi4"]["en"];
     });
 
@@ -894,6 +898,13 @@ navLangEn.forEach((e) => {
       e.innerHTML = secFiveData["eldTextLi3"]["en"];
     });
 
+
+    let secFiveTrailerTitle = document.querySelectorAll(".secFiveTrailerTitle");
+    secFiveTrailerTitle.forEach((e) => {
+      e.innerHTML = secFiveData["treylerTitle"]["en"];
+    });
+
+
     let secFiveTrailerText = document.querySelectorAll(".secFiveTrailerText");
     secFiveTrailerText.forEach((e) => {
       e.innerHTML = secFiveData["trailerText"]["en"];
@@ -902,6 +913,7 @@ navLangEn.forEach((e) => {
     // secFiveUpdateUlText.forEach((e) => {
     //   e.innerHTML = secFiveData["updateTextUlText"]["en"];
     // });
+
     let TrailerTextLi1 = document.querySelectorAll(".trailerTextLi1");
     TrailerTextLi1.forEach((e) => {
       e.innerHTML = secFiveData["trailerTextLi1"]["en"];
@@ -916,9 +928,14 @@ navLangEn.forEach((e) => {
     });
     let TrailerTextLi4 = document.querySelectorAll(".trailerTextLi4");
     TrailerTextLi4.forEach((e) => {
-      e.innerHTML = secFiveData["trailerTextLi3"]["en"];
+      e.innerHTML = secFiveData["trailerTextLi4"]["en"];
     });
 
+    
+    let secFiveBuxgalerTitle = document.querySelectorAll(".buxgalterTitle");
+    secFiveBuxgalerTitle.forEach((e) => {
+      e.innerHTML = secFiveData["buxgalterTitle"]["en"];
+    });
     let secFiveBuxgalerText = document.querySelectorAll(".secFiveBuxgalterText");
     secFiveBuxgalerText.forEach((e) => {
       e.innerHTML = secFiveData["accountingText"]["en"];
@@ -1661,7 +1678,10 @@ navLangRu.forEach((e) => {
       e.innerHTML = secFiveData["updateTextLi5"]["ru"];
     });
 
-
+    let secFiveFlitTitle = document.querySelectorAll(".flitTitle");
+    secFiveFlitTitle.forEach((e) => {
+      e.innerHTML = secFiveData["flitTitle"]["ru"];
+    });
     let secFiveFlitText = document.querySelectorAll(".secFiveFlitText");
     secFiveFlitText.forEach((e) => {
       e.innerHTML = secFiveData["flitText"]["ru"];
@@ -1708,6 +1728,11 @@ navLangRu.forEach((e) => {
       e.innerHTML = secFiveData["eldTextLi3"]["ru"];
     });
 
+    let secFiveTrailerTitle = document.querySelectorAll(".secFiveTrailerTitle");
+    secFiveTrailerTitle.forEach((e) => {
+      e.innerHTML = secFiveData["treylerTitle"]["ru"];
+    });
+
     let secFiveTrailerText = document.querySelectorAll(".secFiveTrailerText");
     secFiveTrailerText.forEach((e) => {
       e.innerHTML = secFiveData["trailerText"]["ru"];
@@ -1730,9 +1755,13 @@ navLangRu.forEach((e) => {
     });
     let TrailerTextLi4 = document.querySelectorAll(".trailerTextLi4");
     TrailerTextLi4.forEach((e) => {
-      e.innerHTML = secFiveData["trailerTextLi3"]["ru"];
+      e.innerHTML = secFiveData["trailerTextLi4"]["ru"];
     });
 
+    let secFiveBuxgalerTitle = document.querySelectorAll(".buxgalterTitle");
+    secFiveBuxgalerTitle.forEach((e) => {
+      e.innerHTML = secFiveData["buxgalterTitle"]["ru"];
+    });
     let secFiveBuxgalerText = document.querySelectorAll(".secFiveBuxgalterText");
     secFiveBuxgalerText.forEach((e) => {
       e.innerHTML = secFiveData["accountingText"]["ru"];
