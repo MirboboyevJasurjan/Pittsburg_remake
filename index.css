@@ -2261,8 +2261,8 @@ nav a {
   .sectionFive .rightTablet .dispechBox {
     width: 100%;
     padding: 30px 0;
-    display: grid;
-    grid-template-columns: 220px 220px;
+    display: flex;
+    flex-direction: column;
     column-gap: 40px;
     border-top: 2px solid #dcdcdc;
     border-bottom: 2px solid #dcdcdc;
@@ -4017,6 +4017,14 @@ nav a {
     line-height: 19px;
     color: #666666;
     text-decoration: none;
+  }
+  .sectionFive .rightTablet > * > .title h3 {
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 34px !important;
+    line-height: 110% !important;
+    color: #111111 !important;
+    margin-bottom: 20px !important;
   }
 
   .sectionFive .rightTablet .updeytBox {
