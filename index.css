@@ -554,7 +554,7 @@ nav a {
   display: grid;
   grid-template-columns: 270px 270px;
   justify-content: space-between;
-  max-height: 400px !important;
+  max-height: 500px !important;
   overflow: hidden;
 
 }
@@ -591,7 +591,7 @@ nav a {
   color: #333333;
   margin-bottom: 10px;
 }
-.sectionFive .textBoxOne a {
+.sectionFive .textBoxOne a, .secFiveConnectBtn {
   display: block;
   margin-top: 20px;
   text-decoration: none;
@@ -601,7 +601,6 @@ nav a {
   line-height: 21px;
   color: #666666;
 }
-
 .sectionFive ul li {
   font-style: normal;
   font-weight: 400;
@@ -2330,7 +2329,7 @@ nav a {
   .sectionFive .rMiddle {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 615px;
   }
   .sectionFive .texts {
     display: flex;
@@ -3894,12 +3893,12 @@ nav a {
 
   /* SectionFive - styles - start */
   .sectionFive {
-    height: 3050px;
+    height: 3350px;
   }
   .sectionFive .rMiddle {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 620px;
   }
   .sectionFive .rBottom {
     display: flex;
@@ -3958,7 +3957,7 @@ nav a {
     left: 0%;
     width: 2px;
     top: 1000px;
-    height: 1300px;
+    height: 1625px;
     background-color: #dcdcdc;
     margin-top: 700px;
   }
@@ -3973,7 +3972,7 @@ nav a {
 
   .sectionFive .rightTablet {
     width: 282px;
-    height: 3024px;
+    height: 3341px;
     display: block;
     border-bottom: 2px solid #dcdcdc;
     position: relative;
@@ -4051,6 +4050,7 @@ nav a {
 
   .sectionFive .rightTablet .updeytBox {
     width: 100%;
+    /* height: 500px; */
     padding: 20px 0;
     display: grid;
     grid-template-columns: none;
@@ -4354,7 +4354,7 @@ nav a {
     height: 505px;
   }
   .sectionSeven .rightMobile .swiper-wrapper .swiper-slide {
-    margin-left: 15px;
+    margin-left: 30px;
     width: 218px !important;
   }
   .sectionSeven .rightMobile .swiper-wrapper .swiper-slide-active {
